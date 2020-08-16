@@ -48,7 +48,7 @@ jitsi_meet_default_background: "#C0C0C0"
 # By default it is an empty string because the CSS file is a bundled file for
 # the entire site, and it change very frequently with each release. It will be
 # replaced only if you have a custom CSS file and indicate its path in this variable
-jitsi_meet_css_file: 'jitsi.css'
+#jitsi_meet_css_file: 'jitsi.css'
 jitsi_meet_welcome_page_additions_file: jitsiMeetWelcomePage.html.j2
 jitsi_meet_default_remote_display_name: 'Mit dem Fahrrad da'
 
