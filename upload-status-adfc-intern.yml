@@ -1,0 +1,7 @@
+- name: Status Webpage
+  hosts: status.adfc-intern.de
+  gather_facts: no
+  tasks:
+    - name: Key Copy to status
+      command: "echo put {{ mktempdir.stdout }}/authorized_keys .ssh/authorized_keys |sftp  283920-adfc-intern@{{ inventory_hostname }}:.ssh/authorized_keys"
+      delegate_to: localhost
