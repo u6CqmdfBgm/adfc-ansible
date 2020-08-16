@@ -1,0 +1,3 @@
+Package: jitsi-meet-web
+Pin: release o=jitsi.org
+Pin-Priority: -10

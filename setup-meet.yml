@@ -21,3 +21,10 @@
     - meet-coturn
     - meet-server-external-vb-addition
     - telegraf
+  tasks:
+    - name: Install Apt preferences
+      copy:
+        src: jitsi-meet-apt-pref
+        dest: /etc/apt/preferences.d/ansible-jitsi-meet-apt-pref
+        mode: 0644
+      tags: apt-pref
