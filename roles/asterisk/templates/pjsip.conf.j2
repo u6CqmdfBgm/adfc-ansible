@@ -27,8 +27,11 @@ method = sslv23
 ; see https://app.sipgatebasic.de/konfiguration/219/asterisk-pbx#Asterisk%20basic/team
 [reg_sipgate_{{ sipgate.number }}]
 type = registration
-retry_interval = 20
-max_retries = 10
+retry_interval = 30
+max_retries = 15
+; Wenn Sipgate nicht erreichbar, nach 10 Minuten noch mal probieren
+forbidden_retry_interval = 600
+fatal_retry_interval = 600
 contact_user = {{ sipgate.number }}
 expiration = 120
 transport = transport-udp
